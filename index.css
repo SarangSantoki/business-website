@@ -262,6 +262,17 @@ body {
   .discover-btn:hover {
     background-color: #ff8500;
   }
+@media (max-width: 768px) {
+    .about-section {
+        width: auto;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}
 
 
 .product-section {
