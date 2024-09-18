@@ -54,7 +54,9 @@ body {
 .navbar-custom .navbar-collapse {
     justify-content: flex-end;
 }
-
+.nav-item{
+    align-content: center;
+}
 
 .Product-section {
     width: 100%;
