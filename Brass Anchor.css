@@ -463,6 +463,112 @@ svg{
     }
 }
 
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffa500;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20%;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff7f00;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #f76d26;
+}
+
+.need-help {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.need-help img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.need-help img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .footer-section {
+        padding: 0px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        padding: 0px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .scroll-to-top,
+    .need-help {
+        bottom: 20px;
+    }
+
+    .scroll-to-top {
+        right: 20px;
+    }
+
+    .need-help {
+        left: 20px;
+    }
+}
+
+/* Animation for Scroll to Top and Need Help Buttons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Show scroll-to-top button when scrolled */
+.scroll-to-top.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
