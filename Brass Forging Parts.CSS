@@ -317,6 +317,10 @@ width: auto;
     .product-range-container {
         flex-direction: column;
     }
+ .product-range{
+        width: 80%;
+        padding:1.5em;
+    }
 
     .product-grid {
         grid-template-columns: 1fr;
