@@ -62,9 +62,7 @@ body {
 
 
 .Product-section {
-    width: 70%;
-    text-align: center;
-    margin: auto;
+    width: 100%;
 }
 
 .banner {
@@ -155,6 +153,9 @@ body {
 
 
 .product-section {
+    width: 70%;
+    text-align: center;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
