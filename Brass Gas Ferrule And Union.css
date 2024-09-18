@@ -220,6 +220,9 @@ body {
 }
 
 .product-range {
+    width: 70%;
+    text-align: center;
+    margin: auto;
     padding: 2em;
     background-color: #f4f4f4;
 }
