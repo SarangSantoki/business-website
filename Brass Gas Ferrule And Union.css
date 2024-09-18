@@ -318,6 +318,10 @@ body {
     .product-grid {
         grid-template-columns: 1fr;
     }
+     .product-range{
+        width: 80%;
+        padding:1.5em;
+    }
 
     .contact-support {
         margin-top: 1em;
