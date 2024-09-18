@@ -58,26 +58,38 @@ function scrollToTop() {
     });
 }
 
-// Show the button when the user scrolls down 20px from the top
-window.onscroll = function () {
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
-    }
-};
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
 
-window.onscroll = function () {
-    console.log('Scrolling...'); // Add this line for debugging
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
-    }
-};
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
 
+    scrollToTopBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 
 
