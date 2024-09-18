@@ -196,6 +196,9 @@ body {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    .product-card{
+        width:330px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
