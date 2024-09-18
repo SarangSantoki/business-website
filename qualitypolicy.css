@@ -51,7 +51,9 @@ body {
 .navbar-custom .navbar-collapse {
     justify-content: flex-end;
 }
-
+.nav-item{
+    align-content: center;
+}
 
 .safety-section {
     width: 100%;
