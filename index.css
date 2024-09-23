@@ -489,7 +489,7 @@ body {
 .highlight-box {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 170px;
     background-color: #ff9900;
     padding: 10px 20px;
     border-radius: 5px;
@@ -519,6 +519,7 @@ body {
 
     .main-image,
     .highlight-box {
+        right: 55px;
         opacity: 1;
         transform: translateX(0);
     }
