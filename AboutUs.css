@@ -8,7 +8,7 @@ body {
 
 
 .navbar-custom {
-    background-color: rgb(161, 156, 156);
+    background-color: white;
     padding: 0;
 }
 .navbar-brand {
@@ -328,11 +328,10 @@ body {
 text-align: -webkit-center;
 }
 form{
-    width: 290px;
+    width: 400px;
 }
 button{
     margin-top: 20px;
-    margin-left: 15px;
 }
 .contact-form {
     background-color: #333;
@@ -344,9 +343,10 @@ button{
     width: max-content;
     border-top: solid;
     border-color: orange;
-    border-width: thin;
+    border-width: thick;
 }
 .contact-form h3 {
+    padding-top: 20px;
      text-align: start;
     color: #FFA500;
     font-weight: bold;
