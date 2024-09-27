@@ -6,13 +6,7 @@
     padding: 0;
 }
 
-.navbar-custom {
-    background-color: white;
-    padding: 0;
-}
-.navbar-brand {
-    font-weight: bold;
-    color: orange;
+
 }
 .navbar-nav .nav-link {
     color: #333;
@@ -53,6 +47,13 @@
 }
 .nav-item{
     align-content: center;
+}
+.navbar-custom.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
