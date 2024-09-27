@@ -311,6 +311,8 @@ body {
 }
 
 .contact-faq-section {
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Make the section responsive */
@@ -321,6 +323,9 @@ body {
 .contact-form, .faq-section {
     width: 48%;
     margin-bottom: 20px; /* Add margin for smaller screens */
+}
+.contact-form {
+text-align: -webkit-center;
 }
 form{
     width: 290px;
@@ -336,17 +341,20 @@ button{
     border-radius: 8px;
 }
 .form-topline{
+    width: max-content;
     border-top: solid;
     border-color: orange;
     border-width: thin;
 }
 .contact-form h3 {
+     text-align: start;
     color: #FFA500;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .contact-form h1 {
+    text-align: start;
     font-size: 32px;
     margin-bottom: 20px;
 }
