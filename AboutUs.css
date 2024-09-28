@@ -307,6 +307,18 @@ body {
 }
 
 
+@media (max-width: 1024px) {
+.overlay-image {
+    bottom: -50px;
+    left: 175px;
+    width: 60%;
+}
+    .about-section {
+    padding: 50px 5%;
+}
+}
+
+
 
 
 
@@ -451,6 +463,14 @@ button{
         margin-bottom: 20px;
     }
 }
+@media (max-width: 1440px) {
+    
+    form{
+        width: 380px;
+    }
+   
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -552,6 +572,12 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .philosophy-section {
+    width: 70%;
+}
+    .contact-faq-section {
+    width: 100%;
+}
     .content {
         flex-direction: column;
         text-align: center;
