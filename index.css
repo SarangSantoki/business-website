@@ -118,6 +118,8 @@
 
     .statistic {
         margin-bottom: 25px;
+        width: 140px;
+        flex-flow: row;
     }
 }
 
@@ -138,7 +140,7 @@
 
 @media (max-width: 1440px) {
     .statistics-section {
-     padding: 50px 145px;
+     padding: 50px 60px;
     }
 
    
@@ -274,6 +276,12 @@ body {
         text-align: center;
     }
 }
+@media (max-width: 1024px) {
+    .about-section {
+        width: auto;
+    }
+}
+
 
 
 .product-section {
