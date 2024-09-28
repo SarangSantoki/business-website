@@ -455,9 +455,11 @@ button{
 @media (max-width: 768px) {
     .contact-form, .faq-section {
         width: 100%; /* Make sections stack on smaller screens */
+        padding: 45px
     }
     form{
-        width: 200px;
+        width: 565px;
+        padding: 5px;
     }
     .contact-form {
         margin-bottom: 20px;
@@ -470,6 +472,14 @@ button{
     }
    
 }
+@media (max-width: 412px) {
+    
+    form{
+        width: 270px;
+    }
+   
+}
+
 
 
 body {
