@@ -472,6 +472,7 @@ button{
     }
    
 }
+/*
 @media (max-width: 537px) {
     
     form{
@@ -479,6 +480,13 @@ button{
     }
    
 }
+*/
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+ form{
+        width: 270px;
+    }
+}
+
 
 
 
