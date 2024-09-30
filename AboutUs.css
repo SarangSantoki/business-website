@@ -318,81 +318,101 @@ body {
 }
 }
 
-
-
-
-
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-.contact-faq-section {
-    width: 70%;
-    margin: auto;
+.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: wrap; /* Make the section responsive */
-    padding: 50px;
-    background-color: #fff;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    gap: 20px;
 }
 
-.contact-form, .faq-section {
-    width: 48%;
-    margin-bottom: 20px; /* Add margin for smaller screens */
+.contact-section {
+    background-image: url('800.png'); /* Use the provided background image */
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 48%;
+    padding: 50px 20px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-.contact-form {
-text-align: -webkit-center;
-}
-form{
-    width: 400px;
-}
-button{
-    margin-top: 20px;
-}
-.contact-form {
-    background-color: #333;
-    color: #fff;
-    padding: 30px;
+
+.contact-form-wrapper {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
     border-radius: 8px;
-}
-.form-topline{
-    width: max-content;
-    border-top: solid;
-    border-color: orange;
-    border-width: thick;
-}
-.contact-form h3 {
-    padding-top: 20px;
-     text-align: start;
-    color: #FFA500;
-    font-weight: bold;
-    margin-bottom: 10px;
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
-.contact-form h1 {
-    text-align: start;
-    font-size: 32px;
+.form-topline {
+    width: 100%;
+    border-top: solid;
+    border-color: #FFA500;
+    border-width: 4px;
     margin-bottom: 20px;
 }
 
-.contact-form form input, 
-.contact-form form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #444;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
+.contact-form-wrapper h3 {
+    color: #FFA500;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.contact-form form button {
+.contact-form-wrapper h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out 0.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.contact-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: slideUp 1.5s ease-in-out 0.9s;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.contact-form-wrapper form input,
+.contact-form-wrapper form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form-wrapper form button {
     width: 100%;
     padding: 15px;
     background-color: #FFA500;
@@ -401,6 +421,23 @@ button{
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.contact-form-wrapper form button:hover {
+    background-color: #e59400;
+    transform: translateY(-3px);
+}
+
+.faq-section {
+    flex: 1 1 48%;
+    padding: 120px 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in-out 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .faq-section h3 {
@@ -423,10 +460,11 @@ button{
     font-weight: bold;
     font-size: 18px;
     padding: 15px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item input[type="checkbox"] {
@@ -449,45 +487,43 @@ button{
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .contact-form, .faq-section {
-        width: 100%; /* Make sections stack on smaller screens */
-        padding: 45px
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
-    form{
-        width: 565px;
-        padding: 5px;
-    }
-    .contact-form {
+
+    .contact-section,
+    .faq-section {
+        flex: 1 1 100%;
+        max-width: 90%;
         margin-bottom: 20px;
     }
 }
-@media (max-width: 1440px) {
-    
-    form{
-        width: 380px;
-    }
-   
-}
-/*
-@media (max-width: 537px) {
-    
-    form{
-        width: 270px;
-    }
-   
-}
-*/
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
- form{
-        width: 270px;
-    }
-}
-
-
 
 
 body {
