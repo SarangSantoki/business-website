@@ -294,6 +294,10 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+.icon-box{
+        max-width: 50px;
+    margin-bottom: 10px;
+}
 .icon-box h5{
     font-family: "Asul", serif;
   font-weight: 700;
