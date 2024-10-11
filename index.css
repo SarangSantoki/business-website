@@ -194,7 +194,9 @@ body {
   .about-images:hover .overlay-image {
     transform: translateY(-10px);
   }
-  
+  .about-section {
+      margin :auto;
+  }
   .about-content {
     flex: 1 1 50%;
     text-align: left;
