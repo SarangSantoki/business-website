@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
+/*
 const carousel = document.querySelector('.carousel');
 const indicators = document.querySelectorAll('.indicator');
 
@@ -45,7 +45,7 @@ indicators.forEach((indicator, index) => {
 setInterval(() => {
     showSlide(currentIndex + 1);
 }, 5000); // Change slide every 5 seconds
-
+*/
 
 
 
