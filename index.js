@@ -46,7 +46,32 @@ setInterval(() => {
     showSlide(currentIndex + 1);
 }, 5000); // Change slide every 5 seconds
 */
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all the h2 elements within the statistics section
+    const statistics = document.querySelectorAll('.statistics-section .statistic h2');
 
+    // Function to count from 0 to the target value
+    function countUp(element, target) {
+        let count = 0;
+        const speed = 50; // Speed of counting
+        const increment = Math.ceil(target / 100); // Increment value
+
+        const counter = setInterval(function() {
+            count += increment;
+            if (count >= target) {
+                count = target; // Ensures it stops exactly at the target
+                clearInterval(counter);
+            }
+            element.textContent = count;
+        }, speed);
+    }
+
+    // Iterate through each statistic and animate its value
+    statistics.forEach(function(statistic) {
+        let targetValue = parseInt(statistic.getAttribute('data-target')); // Assuming target value is stored in data-target
+        countUp(statistic, targetValue);
+    });
+});
 
 
 
@@ -90,7 +115,6 @@ function scrollFunction() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 
 
 
