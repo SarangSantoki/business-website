@@ -1,5 +1,6 @@
 // script.js
 
+// Handle product menu item click and content change
 document.querySelectorAll('.product-menu li').forEach(item => {
     item.addEventListener('click', () => {
         document.querySelector('.product-menu .active').classList.remove('active');
@@ -14,19 +15,27 @@ document.querySelectorAll('.product-menu li').forEach(item => {
     });
 });
 
-
-
+// Handle FAQ section toggle
 const faqs = document.querySelectorAll(".faq");
 
-
 faqs.forEach(faq => {
-    faq.addEventListener("click", () =>  {
+    faq.addEventListener("click", () => {
+        // Toggle the active class
         faq.classList.toggle("active");
+
+        // Toggle the visibility of the answer
+        const answer = faq.querySelector(".answer");
+        if (faq.classList.contains("active")) {
+            answer.style.maxHeight = answer.scrollHeight + "px";  // Dynamically adjust height
+        } else {
+            answer.style.maxHeight = null;
+        }
     });
 });
 
+// Handle scroll to top button visibility and scroll functionality
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
@@ -42,9 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-window.onscroll = function() {scrollFunction()};
+// Function to show or hide the scroll to top button
+window.onscroll = function () {
+    scrollFunction();
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -57,4 +67,3 @@ function scrollFunction() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
