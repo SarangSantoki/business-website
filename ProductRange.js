@@ -15,7 +15,7 @@ document.querySelectorAll('.product-card').forEach(card => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.querySelector('.scroll-to-top');
-
+x`
     window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             scrollToTopBtn.classList.add('show');
