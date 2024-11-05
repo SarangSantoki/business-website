@@ -152,8 +152,8 @@ body {
 
 
 .about-section {
-    width: 1250px;
-    margin-left: 115px;
+    width: 1200px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -170,17 +170,18 @@ body {
   }
   
   .main-image {
-    width: 100%;
+    width: auto;
+    height: 550PX;
     transition: transform 0.5s ease-in-out;
     border-radius: 10px;
   }
   
   .overlay-image {
-    width: auto;
+    width: 200PX;
     position: absolute;
     top: 20px;
-    left: 160px;
-    top: 225px;
+    left: 245px;
+    top: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease-in-out;
@@ -381,6 +382,16 @@ body {
 
 .product-card:hover {
     transform: translateY(-10px);
+}
+.highlight-BOX{
+        position: absolute;
+    bottom: 20px;
+    /* right: 20px; */
+    background-color: #ff9900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
