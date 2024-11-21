@@ -350,6 +350,7 @@ body {
 }
 
 .title{
+    font-weight: 700;
     font-size: 3rem;
     margin: 2rem 0rem;
 }
