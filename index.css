@@ -393,6 +393,10 @@ body {
     color: #fff;
     font-weight: bold;
 }
+.home-link{
+        text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 768px) {
     .product-grid {
