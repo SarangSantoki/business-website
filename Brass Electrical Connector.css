@@ -255,6 +255,7 @@ body {
 }
 
 .product-item {
+     font-weight: 700;
     background-color: #fff;
     padding: 1em;
     text-align: center;
@@ -341,6 +342,7 @@ body {
 
 
 .Policy{
+     font-weight: 800;
     min-height: 100vh;
     width: 80%;
     margin: 0 auto;
@@ -371,6 +373,7 @@ body {
 
 .question h3 {
      font-size: 1.8rem;
+     font-weight: 700;
 }
 
 
@@ -382,7 +385,7 @@ body {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .faq.active.answer{
