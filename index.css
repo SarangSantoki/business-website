@@ -79,18 +79,33 @@
     background-color: #fff;
     border: 1px solid #eee;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.statistic:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 .statistic img {
     max-width: 50px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.statistic:hover img {
+    transform: rotate(360deg) scale(1.2);
 }
 
 .statistic h2 {
     font-size: 36px;
     margin-bottom: 10px;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+.statistic:hover h2 {
+    color: #ff9900;
 }
 
 .statistic p {
@@ -100,20 +115,22 @@
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.statistic:hover p {
+    background-color: #333;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     .statistics-section {
         padding: 0px 215px;
         flex-direction: column;
         align-items: center;
     }
-
-    .left{
-        margin-top: -65px;
-    }
-
-    
 
     .statistic {
         margin-bottom: 25px;
@@ -133,16 +150,12 @@
         background-color: #f9f9f9;
         padding: 0px;
     }
-
-   
 }
 
 @media (max-width: 1440px) {
     .statistics-section {
-     padding: 50px 60px;
+        padding: 50px 60px;
     }
-
-   
 }
 
 body {
