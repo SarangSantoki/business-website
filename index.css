@@ -162,6 +162,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 
 
 .about-section {
@@ -1136,6 +1140,7 @@ body {
 .carousel-inner img {
     filter: brightness(70%);
 }
+
 @media (max-width: 768px) {
     .carousel-caption {
         left: 5%;
