@@ -545,7 +545,6 @@ body {
 
     .main-image,
     .highlight-box {
-        right: 55px;
         opacity: 1;
         transform: translateX(0);
     }
@@ -665,6 +664,9 @@ body {
     .step-number {
         margin-bottom: 10px;
     }
+
+    .highlight-box {
+        
 }
 
 
